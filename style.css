@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #bdebf3;
+  animation: slide 10s infinite;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+  animation: reet 10s infinite;
+}
+header p {
+  font-size: 25px;
+  text-align: center;
+  animation: monty 10s infinite;
+}
+
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+.pads > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+.pad1 {
+  background: #ff615c;
+}
+.pad2 {
+  background: #470e0e;
+}
+.pad3 {
+  background: #2fb90d;
+}
+.pad4 {
+  background: #58584a;
+}
+.pad5 {
+  background: #0017eb;
+}
+.pad6 {
+  background: #cbf803;
+}
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
+@keyframes slide {
+  0%{
+    background-color: #cbf803;
+  }
+  33%{
+    background-color: aquamarine;
+  }
+  67%{
+    background-color: #ff8a8a;
+  }
+  77%{
+    background-color: beige;
+  }
+}
+@keyframes reet {
+  0%{
+    color: teal;
+  }
+  33%{
+    color: tan;
+  }
+  67%{
+    color: aqua;
+    
+  }
+  77%{
+    color: black;
+  }
+}
+@keyframes monty {
+  0%{
+    color: rgb(255, 8, 0);
+  }
+  33%{
+    color: rgb(153, 0, 255);
+  }
+  67%{
+    color: rgb(187, 255, 0);
+    
+  }
+  77%{
+    color: rgb(38, 95, 76);
+  }
+}
